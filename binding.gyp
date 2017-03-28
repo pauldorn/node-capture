@@ -1,7 +1,7 @@
 {
   'targets': [
     {
-      'target_name': 'cap',
+      'target_name': 'node-capture',
       'sources': [
         'src/binding.cc',
       ],
@@ -14,7 +14,7 @@
             'deps/npcap-sdk/Include',
           ],
           'defines': [
-            'WPCAP',
+            'WPCAP', 'WIN32', '_WIN32'
           ],
           'conditions': [
             [ 'target_arch=="ia32"', {
