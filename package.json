@@ -1,0 +1,17 @@
+{ "name": "wincap",
+  "version": "0.0.1",
+  "author": "Paul Dorn <pauldorn@gmail.com>",
+  "description": "A cross-platform binding for performing packet capturing with node.js",
+  "main": "./lib/Cap",
+  "dependencies": {
+    "nan": "^2.4.0"
+  },
+  "scripts": {
+    "install": "node-gyp rebuild",
+    "test": "node test/test.js"
+  },
+  "engines": { "node": ">=0.10.0" },
+  "keywords": [ "pcap", "packet", "capture", "libpcap", "winpcap" ],
+  "licenses": [ { "type": "MIT", "url": "http://github.com/mscdex/cap/raw/master/LICENSE" } ],
+  "repository" : { "type": "git", "url": "http://github.com/mscdex/cap.git" }
+}
